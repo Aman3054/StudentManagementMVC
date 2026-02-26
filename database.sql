@@ -1,0 +1,14 @@
+CREATE DATABASE StudentDB;
+GO
+
+USE StudentDB;
+GO
+
+CREATE TABLE Students (
+    StudentId INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(200) NOT NULL,
+    Email NVARCHAR(200) NOT NULL,
+    Age INT NOT NULL,
+    IsActive BIT NOT NULL
+);
+GO

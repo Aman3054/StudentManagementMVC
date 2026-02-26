@@ -1,0 +1,119 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* Student form and validation */
+.validation-error {
+  color: #c00;
+  margin: 4px 0;
+  display: block;
+}
+
+.message-success {
+  color: #0a0;
+  margin: 8px 0;
+}
+
+.form-row {
+  margin: 8px 0;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="number"],
+.form-row input[type="email"] {
+  padding: 6px;
+}
+
+.form-actions {
+  margin-top: 12px;
+}
+
+.form-actions button {
+  margin-right: 8px;
+  padding: 6px 10px;
+}
+
+.form-actions a {
+  margin-left: 8px;
+}
+
+/* Students table */
+.page-actions {
+  margin: 8px 0 12px 0;
+}
+
+.students-table {
+  border-collapse: collapse;
+}
+
+.students-table th,
+.students-table td {
+  padding: 8px 12px;
+}
+
+.students-table thead tr {
+  font-weight: bold;
+}
+
+.students-table tbody tr td {
+  border-bottom: 1px solid #ddd;
+}
+
+.students-table .action-cell a {
+  margin-right: 4px;
+}
+
+/* Student details (read-only) */
+.details-table {
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+
+.details-table th,
+.details-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.details-table th {
+  font-weight: bold;
+  width: 140px;
+}
+
+.details-actions {
+  margin-top: 16px;
+}

@@ -1,0 +1,50 @@
+@model List<StudentManagementMVC.Models.Student> //list of student objects
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h1>Students</h1>
+
+@if (TempData["Success"] != null)
+{
+    <p class="message-success">@TempData["Success"]</p>
+}
+@if (TempData["Error"] != null)
+{
+    <p class="validation-error">@TempData["Error"]</p>
+}
+
+<p class="page-actions">
+    <a asp-action="Create">Create New</a> |
+    <a asp-action="Reports">Reports</a>
+</p>
+
+<table class="students-table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Active</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.StudentId</td>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+                <td>@item.Age</td>
+                <td>@(item.IsActive ? "Yes" : "No")</td>
+                <td class="action-cell">
+                    <a asp-action="Edit" asp-route-id="@item.StudentId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.StudentId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.StudentId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

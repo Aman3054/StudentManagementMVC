@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Documentation/">
+    <File Path="../../../Desktop/Wipro Training/WIPRO LOCAL/StudentManagement_Project_Demo.pdf" />
+    <File Path="database.sql" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="StudentManagementMVC.Tests/StudentManagementMVC.Tests.csproj" />
+  <Project Path="StudentManagementMVC/StudentManagementMVC.csproj" />
+</Solution>

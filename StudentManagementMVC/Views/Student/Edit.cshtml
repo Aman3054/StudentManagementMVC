@@ -1,0 +1,43 @@
+@model StudentManagementMVC.Models.Student
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+<h1>Edit Student</h1>
+
+@if (TempData["Error"] != null)
+{
+    <p class="validation-error">@TempData["Error"]</p>
+}
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="StudentId" />
+    <div asp-validation-summary="ModelOnly" class="validation-error"></div>
+    <div class="form-row">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name" class="validation-error"></span>
+    </div>
+    <div class="form-row">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email" class="validation-error"></span>
+    </div>
+    <div class="form-row">
+        <label asp-for="Age">Age</label>
+        <input asp-for="Age" type="number" />
+        <span asp-validation-for="Age" class="validation-error"></span>
+    </div>
+    <div class="form-row">
+        <label asp-for="IsActive">Active</label>
+        <input asp-for="IsActive" type="checkbox" />
+    </div>
+    <div class="form-actions">
+        <button type="submit">Save</button>
+        <a asp-action="Index">Cancel</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

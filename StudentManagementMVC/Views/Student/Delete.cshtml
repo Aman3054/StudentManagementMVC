@@ -1,0 +1,15 @@
+@model StudentManagementMVC.Models.Student
+@{
+    ViewData["Title"] = "Delete Student";
+}
+
+<h1>Delete Student</h1>
+
+<p>Are you sure you want to delete this student?</p>
+<p><strong>@Model.Name</strong> - @Model.Email</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="StudentId" />
+    <button type="submit">Delete</button>
+    <a asp-action="Index">Cancel</a>
+</form>
