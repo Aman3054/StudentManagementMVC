@@ -156,8 +156,6 @@ This project demonstrates an **end-to-end ASP.NET Core MVC application** followi
 ---
 
 ## 👨‍💻 Author
-Aman Goswami | DotNet Developer 
-
 **Aman Goswami**  
 B.Tech CSE | Full-Stack Developer  
 MERN Stack • .NET • SQL • System Design
