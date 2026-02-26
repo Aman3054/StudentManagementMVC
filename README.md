@@ -41,9 +41,6 @@ This project showcases real-world backend architecture and enterprise developmen
 ## 📂 Project Structure
 
 ```
-## 📂 Project Structure
-
-```
 StudentManagementMVC
 │
 ├── Documentation
@@ -69,10 +66,8 @@ StudentManagementMVC
 │   └── Program.cs
 │
 └── StudentManagementMVC.Tests
-    ├── Dependencies
     └── StudentEfRepositoryTests.cs
 ```
-
 ---
 
 ## ▶️ Application Execution Flow
